@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="村上春树作品详情、关联角色与阅读提示。"
+    >
+    <title>作品详情｜村上春树：作家、作品与角色宇宙</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到正文</a>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html" aria-label="村上春树文学小站首页">
+          <span class="brand-mark" aria-hidden="true">村</span>
+          <span class="brand-text">
+            <strong>村上春树</strong>
+            <small>作家 · 作品 · 角色</small>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="visually-hidden">打开导航</span>
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+        <nav aria-label="主导航">
+          <ul class="nav-list" id="primary-navigation">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="author.html" aria-current="page">作家与作品</a></li>
+            <li><a href="characters.html">角色宇宙</a></li>
+            <li><a href="style.html">写作风格</a></li>
+            <li><a href="reading.html">推荐阅读</a></li>
+            <li><a href="about.html">关于页面</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main work-page-main" id="main-content" data-work-page>
+      <noscript>
+        <p>作品详情需要启用 JavaScript。你仍可以通过“作家与作品”页面浏览作品目录。</p>
+      </noscript>
+
+      <section class="work-hero" aria-labelledby="work-page-title">
+        <div class="work-cover" aria-hidden="true">
+          <span class="work-cover-year" data-work-cover-year>年份</span>
+          <p class="work-cover-title" data-work-cover-title>作品</p>
+          <span class="work-cover-mark"></span>
+        </div>
+        <div class="work-info">
+          <p class="folio">作品条目／从人物回到纸页</p>
+          <h1 class="work-title" id="work-page-title" data-work-title>作品详情</h1>
+          <p class="work-subtitle" data-work-short>
+            选择一部作品后，这里会出现简介、人物和阅读提示。
+          </p>
+          <div class="detail-meta">
+            <span data-work-year>年份</span>
+            <span data-work-type>体裁</span>
+            <span data-work-level>难度</span>
+          </div>
+          <div class="button-row">
+            <a class="button-link button-link--solid" data-work-reading-link href="reading.html">
+              放进阅读顺序
+            </a>
+            <a class="text-link" data-work-character-link href="characters.html">
+              查看关联角色
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="work-body">
+        <article class="prose-column">
+          <h2>故事重心</h2>
+          <p data-work-summary>
+            作品信息会在这里展开。内容只作阅读入口，不替代原作。
+          </p>
+          <h2>阅读提示</h2>
+          <p data-work-reading-note>
+            可以根据阅读经验和兴趣选择顺序。
+          </p>
+          <h2>放在哪条线索里</h2>
+          <p data-work-context>
+            每部作品都和前后创作阶段有不同关系。
+          </p>
+        </article>
+
+        <aside class="work-sidebar" aria-labelledby="work-sidebar-title">
+          <h2 id="work-sidebar-title">关联角色</h2>
+          <div class="role-links" data-work-roles>
+            <p>选择作品后显示。</p>
+          </div>
+          <h2>换一部作品</h2>
+          <nav class="work-choice-list" aria-label="作品列表" data-work-choice-list></nav>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-main">
+        <div class="footer-grid">
+          <div>
+            <h2>村上春树文学小站</h2>
+            <p>一个关于作品、人物与阅读路径的学习展示项目。内容以概括介绍为主，不替代原作与正式出版资料。</p>
+          </div>
+          <div>
+            <h2>栏目</h2>
+            <div class="footer-nav">
+              <a href="index.html">首页</a>
+              <a href="author.html">作家与作品</a>
+              <a href="characters.html">角色宇宙</a>
+              <a href="style.html">写作风格</a>
+              <a href="reading.html">推荐阅读</a>
+              <a href="about.html">关于页面</a>
+            </div>
+          </div>
+          <div>
+            <h2>作品信息</h2>
+            <p>出版年份与简介仅用于阅读导航。不同版本、译名和最新消息，以正式出版资料为准。</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-current-year>2026</span> 村上春树文学小站｜学习展示</span>
+          <span>HTML5 · CSS3 · 原生 JavaScript</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

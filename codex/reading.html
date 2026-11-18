@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="按入门优先、出版顺序或角色线索切换村上春树作品的阅读顺序。"
+    >
+    <title>推荐阅读｜村上春树：作家、作品与角色宇宙</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到正文</a>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html" aria-label="村上春树文学小站首页">
+          <span class="brand-mark" aria-hidden="true">村</span>
+          <span class="brand-text">
+            <strong>村上春树</strong>
+            <small>作家 · 作品 · 角色</small>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="visually-hidden">打开导航</span>
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+        <nav aria-label="主导航">
+          <ul class="nav-list" id="primary-navigation">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="author.html">作家与作品</a></li>
+            <li><a href="characters.html">角色宇宙</a></li>
+            <li><a href="style.html">写作风格</a></li>
+            <li><a href="reading.html" aria-current="page">推荐阅读</a></li>
+            <li><a href="about.html">关于页面</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main" id="main-content">
+      <header class="page-hero">
+        <div class="page-hero-grid">
+          <div>
+            <p class="folio">阅读路线／三种入口</p>
+            <h1 class="page-title">推荐阅读</h1>
+            <p class="page-intro">
+              从哪一本开始，没有唯一答案。可以按阅读经验、出版年份，或你感兴趣的人物选择一条路线。切换标签后，点任一步骤就能看到书名背后的提示。
+            </p>
+          </div>
+          <p class="page-note">
+            难度标签只描述进入这本书时需要的阅读准备，不代表作品价值的高低。长篇挑战也可以按章节慢慢读。
+          </p>
+        </div>
+      </header>
+
+      <section class="reader-section" id="reading" aria-labelledby="reading-guide-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">顺序可以改变</p>
+            <h2 id="reading-guide-title">选一条适合你的路线</h2>
+          </div>
+          <p data-mode-description>
+            先建立人物与语气，再进入更复杂的结构。
+          </p>
+        </div>
+
+        <div class="mode-tabs" role="tablist" aria-label="阅读顺序模式">
+          <button
+            class="mode-tab"
+            id="tab-beginner"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-controls="reading-mode-panel"
+            data-reading-mode="beginner"
+          >
+            入门优先
+          </button>
+          <button
+            class="mode-tab"
+            id="tab-publication"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="reading-mode-panel"
+            tabindex="-1"
+            data-reading-mode="publication"
+          >
+            按出版顺序
+          </button>
+          <button
+            class="mode-tab"
+            id="tab-character"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="reading-mode-panel"
+            tabindex="-1"
+            data-reading-mode="character"
+          >
+            按角色线索
+          </button>
+        </div>
+
+        <div
+          id="reading-mode-panel"
+          role="tabpanel"
+          aria-label="当前阅读顺序"
+          aria-live="polite"
+        >
+          <p class="visually-hidden" aria-live="polite" data-reading-live></p>
+          <div class="reader-shell">
+            <ol class="reading-steps" data-reading-steps>
+              <noscript>
+                <li>阅读顺序切换需要启用 JavaScript。你仍可从作品页和角色页开始浏览。</li>
+              </noscript>
+            </ol>
+            <aside class="reading-detail" data-reading-detail aria-live="polite">
+              <p class="eyebrow">阅读提示</p>
+              <h2>选择第一步</h2>
+              <p>点选任一步骤，这里会显示作品简介、关联角色和阅读提示。</p>
+            </aside>
+          </div>
+        </div>
+
+        <div class="inline-reading">
+          <div>
+            <h2>想先看人物关系？</h2>
+            <p>角色页可以从人物反查作品，再把一条角色线索带回来。</p>
+          </div>
+          <a class="button-link" href="characters.html">进入角色宇宙</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-main">
+        <div class="footer-grid">
+          <div>
+            <h2>村上春树文学小站</h2>
+            <p>一个关于作品、人物与阅读路径的学习展示项目。内容以概括介绍为主，不替代原作与正式出版资料。</p>
+          </div>
+          <div>
+            <h2>栏目</h2>
+            <div class="footer-nav">
+              <a href="index.html">首页</a>
+              <a href="author.html">作家与作品</a>
+              <a href="characters.html">角色宇宙</a>
+              <a href="style.html">写作风格</a>
+              <a href="about.html">关于页面</a>
+            </div>
+          </div>
+          <div>
+            <h2>阅读提示</h2>
+            <p>阅读顺序是常见进入方式之一。若一本书让你停不下来，也可以直接沿着兴趣读下去。</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-current-year>2026</span> 村上春树文学小站｜学习展示</span>
+          <span>HTML5 · CSS3 · 原生 JavaScript</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

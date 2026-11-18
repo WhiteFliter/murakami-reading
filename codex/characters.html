@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="按角色与作品的双向关系浏览村上春树小说人物，包括“我”、鼠、喜喜、羊男等角色。"
+    >
+    <title>角色宇宙｜村上春树：作家、作品与角色宇宙</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到正文</a>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html" aria-label="村上春树文学小站首页">
+          <span class="brand-mark" aria-hidden="true">村</span>
+          <span class="brand-text">
+            <strong>村上春树</strong>
+            <small>作家 · 作品 · 角色</small>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="visually-hidden">打开导航</span>
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+        <nav aria-label="主导航">
+          <ul class="nav-list" id="primary-navigation">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="author.html">作家与作品</a></li>
+            <li><a href="characters.html" aria-current="page">角色宇宙</a></li>
+            <li><a href="style.html">写作风格</a></li>
+            <li><a href="reading.html">推荐阅读</a></li>
+            <li><a href="about.html">关于页面</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main" id="main-content">
+      <header class="page-hero">
+        <div class="page-hero-grid">
+          <div>
+            <p class="folio">人物索引／双向关联</p>
+            <h1 class="page-title">角色宇宙</h1>
+            <p class="page-intro">
+              人物不只属于一本书。有人在不同长篇里留下相近的姓名与关系，有人只出现一次，却改变了整部作品的重心。点选角色或作品，看看两边的线索怎样接上。
+            </p>
+          </div>
+          <p class="page-note">
+            早期作品中的“我”有相似的叙述姿态，但不宜简单认定所有“我”都是同一个人。这里把它们放在一组，是沿着视角和人物关系阅读，不替作品做统一设定。
+          </p>
+        </div>
+      </header>
+
+      <section
+        class="content-section"
+        id="character-universe"
+        aria-labelledby="universe-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">角色关系图</p>
+            <h2 id="universe-title">先选一个人，再沿着书走</h2>
+          </div>
+          <p>
+            左侧是人物卡，右侧会显示他与哪些作品相连，以及同一部作品中还有谁。也可以从页面下方的作品索引反向查找角色。
+          </p>
+        </div>
+
+        <div class="filter-bar" aria-label="筛选角色类型">
+          <button class="filter-button" type="button" data-character-filter="all" aria-pressed="true">全部角色</button>
+          <button class="filter-button" type="button" data-character-filter="cross" aria-pressed="false">跨作品关联</button>
+          <button class="filter-button" type="button" data-character-filter="single" aria-pressed="false">主要关联作品</button>
+        </div>
+
+        <p class="visually-hidden" aria-live="polite" data-character-count>
+          当前显示 17 位角色
+        </p>
+
+        <div class="universe-layout">
+          <div class="character-grid" data-character-grid>
+            <noscript>
+              <p>角色互动需要启用 JavaScript。还可以先阅读作品页与推荐阅读页。</p>
+            </noscript>
+          </div>
+
+          <aside
+            class="relationship-board"
+            aria-labelledby="relationship-title"
+            data-relationship-board
+          >
+            <p class="eyebrow">关系视图</p>
+            <h2 id="relationship-title">选一张角色卡</h2>
+            <p>右侧内容会随着角色或作品的选择而更新。选用“我”作为起点，可以看到早期叙述者留下的几条人物线。</p>
+            <p class="relationship-hint">操作提示：角色卡、作品名与关系列表都可以点击。</p>
+          </aside>
+        </div>
+
+        <div class="work-index-panel" aria-labelledby="work-index-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">反向查找</p>
+              <h2 id="work-index-title">从作品看人物</h2>
+            </div>
+            <p>选中一部作品，左侧会标出与它相关的角色。没有单独收录重点人物的作品，也会留在索引里。</p>
+          </div>
+          <div class="work-index" data-work-index></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-main">
+        <div class="footer-grid">
+          <div>
+            <h2>村上春树文学小站</h2>
+            <p>一个关于作品、人物与阅读路径的学习展示项目。内容以概括介绍为主，不替代原作与正式出版资料。</p>
+          </div>
+          <div>
+            <h2>栏目</h2>
+            <div class="footer-nav">
+              <a href="index.html">首页</a>
+              <a href="author.html">作家与作品</a>
+              <a href="style.html">写作风格</a>
+              <a href="reading.html">推荐阅读</a>
+              <a href="about.html">关于页面</a>
+            </div>
+          </div>
+          <div>
+            <h2>关系说明</h2>
+            <p>角色关联用于阅读导航。遇到同名、相似视角或不同译本时，仍应回到具体作品确认。</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-current-year>2026</span> 村上春树文学小站｜学习展示</span>
+          <span>HTML5 · CSS3 · 原生 JavaScript</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
